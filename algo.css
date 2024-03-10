@@ -61,6 +61,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15px;
 }
 
 .btnAção {
@@ -72,6 +73,8 @@ body {
     cursor: pointer;
     background: #2b2a2a;
     color: antiquewhite;
+    outline: none;
+
 }
 
 .btnAção:hover {
