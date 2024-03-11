@@ -1,6 +1,6 @@
 body {
-    background: #000;
-    color: aliceblue;
+    background: url('rosinha\ fundo.png') repeat; 
+    color: #333333; 
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
@@ -12,40 +12,45 @@ body {
     max-width: 450px;
     margin-top: 90px;
     margin-bottom: 50px;
-    background: #2b2a2a;
+    background: #fce4ec url('d9644718baa4506407466833e5227019-aquarela-flor-rosa.png') repeat; 
     padding: 55px;
     border-radius: 12px;
 }
 
-.topo{
+.titulo {
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: #6c3f3f; 
+}
+.topo {
     display: flex;
     justify-content: space-between;
     margin-bottom: 35px;
 }
 
-.topo input{
+.topo input {
     width: 350px;
     padding: 15px;
     border-radius: 12px;
-    border: 1px solid #191818;
+    border: 1px solid #f48fb1; 
     outline: none;
     font-size: 1.2rem;
-    background: #191818;
-    color:aliceblue;
+    background: #ffffff; 
+    color: #333333; 
 }
 
-.topo button{
+.topo button {
     width: 45px;
     border-radius: 12px;
-    border: 1px solid #191818;
-    background: #191818;
-    color:aliceblue;
+    border: 1px solid #f48fb1; 
+    background: #ffffff; 
+    color: #333333;
     outline: none;
 }
 
-.topo button:hover{
-    background: #1f1e1e;
-    cursor:pointer
+.topo button:hover {
+    background: #fce4ec; 
+    cursor: pointer;
 }
 
 #listaTarefas {
@@ -54,9 +59,10 @@ body {
     margin: 0;
 }
 
+
 #listaTarefas li {
     padding: 20px;
-    background: #191818;
+    background: #ffffff; 
     border-radius: 12px;
     display: flex;
     justify-content: space-between;
@@ -64,19 +70,35 @@ body {
     margin-top: 15px;
 }
 
+#listaTarefas li .textoTarefa {
+    font-weight: bold; 
+}
+
 .btnAção {
     border-radius: 22px;
-    border: 1px solid #191818;
+    border: 1px solid #f48fb1; 
     width: 38px;
     height: 38px;
     margin-right: 10px;
     cursor: pointer;
-    background: #2b2a2a;
-    color: antiquewhite;
+    background: #fce4ec; 
+    color: #333333; 
     outline: none;
-
 }
 
 .btnAção:hover {
-    background: #3c3a3a;
+    background: #f8bbd0; 
+}
+
+@media only screen and (max-width: 600px) {
+    .conteudo {
+        width: 95%; 
+        padding: 2%; 
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .conteudo {
+        padding: 1%;
+    }
 }
