@@ -1,6 +1,6 @@
 body {
-    background: url('rosinha\ fundo.png') repeat; 
-    color: #333333; 
+    background: url('fundo.png') repeat;
+    color: #333333;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
@@ -9,19 +9,20 @@ body {
 .conteudo {
     margin: 0 auto;
     width: 100%;
-    max-width: 450px;
+    max-width: 525px;
     margin-top: 90px;
     margin-bottom: 50px;
-    background: #fce4ec url('d9644718baa4506407466833e5227019-aquarela-flor-rosa.png') repeat; 
+    background: #fce4ec url('flor.png') repeat;
     padding: 55px;
     border-radius: 12px;
 }
 
 .titulo {
-    text-align: center; 
-    margin-bottom: 20px; 
-    color: #6c3f3f; 
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6c3f3f;
 }
+
 .topo {
     display: flex;
     justify-content: space-between;
@@ -29,28 +30,25 @@ body {
 }
 
 .topo input {
-    width: 350px;
+    width: 175px;
     padding: 15px;
     border-radius: 12px;
-    border: 1px solid #f48fb1; 
+    border: 1px solid #f48fb1;
     outline: none;
     font-size: 1.2rem;
-    background: #ffffff; 
-    color: #333333; 
+    background: #ffffff;
+    color: #333333;
+    margin-left: 10px; 
 }
 
 .topo button {
     width: 45px;
     border-radius: 12px;
-    border: 1px solid #f48fb1; 
-    background: #ffffff; 
+    border: 1px solid #f48fb1;
+    background: #ffffff;
     color: #333333;
     outline: none;
-}
-
-.topo button:hover {
-    background: #fce4ec; 
-    cursor: pointer;
+    margin-left: 10px; 
 }
 
 #listaTarefas {
@@ -59,10 +57,9 @@ body {
     margin: 0;
 }
 
-
 #listaTarefas li {
     padding: 20px;
-    background: #ffffff; 
+    background: #ffffff;
     border-radius: 12px;
     display: flex;
     justify-content: space-between;
@@ -71,29 +68,50 @@ body {
 }
 
 #listaTarefas li .textoTarefa {
-    font-weight: bold; 
+    font-weight: bold;
+}
+
+#listaTarefas li .tipoTarefa {
+    color: #666666;
+    font-style: italic;
+    margin-right: 10px;
 }
 
 .btnAção {
     border-radius: 22px;
-    border: 1px solid #f48fb1; 
+    border: 1px solid #f48fb1;
     width: 38px;
     height: 38px;
     margin-right: 10px;
     cursor: pointer;
-    background: #fce4ec; 
-    color: #333333; 
+    background: #fce4ec;
+    color: #333333;
     outline: none;
 }
 
 .btnAção:hover {
-    background: #f8bbd0; 
+    background: #f8bbd0;
+}
+
+#btnApagarTarefas {
+    border-radius: 12px;
+    border: 1px solid #f48fb1;
+    background: #ffffff;
+    color: #333333;
+    padding: 10px 20px; 
+    width: auto; 
+    outline: none;
+    cursor: pointer;
+}
+
+#btnApagarTarefas:hover {
+    background: #fce4ec;
 }
 
 @media only screen and (max-width: 600px) {
     .conteudo {
-        width: 95%; 
-        padding: 2%; 
+        width: 95%;
+        padding: 2%;
     }
 }
 
